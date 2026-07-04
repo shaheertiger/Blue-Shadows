@@ -5,7 +5,6 @@
   "description": "Blue Shadows Barber Studio — cinematic premium barbershop homepage (Milton, ON).",
   "scripts": {
     "dev": "npx serve .",
-    "build": "echo 'Static site — nothing to build'",
     "start": "npx serve ."
   }
 }
