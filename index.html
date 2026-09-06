@@ -13,6 +13,24 @@
 
   gtag('config', 'AW-17551570187');
 </script>
+
+<!-- Event snippet for Click to call conversion page -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17551570187/yQt4CKvswO8cEIvqnrFB',
+      'value': 1.0,
+      'currency': 'CAD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 <title>Blue Shadows Barber Studio — Where Precision Becomes Presence</title>
 <meta name="description" content="Blue Shadows Barber Studio — a premium barber studio in Milton, ON offering precision haircuts, fades, beard trims, lineups, colour and grooming. 10% off your first haircut appointment.">
 <meta name="theme-color" content="#05070a">
@@ -795,6 +813,15 @@ function openLightbox(cap, bg){
 }
 document.getElementById('lightboxClose').addEventListener('click', ()=> lightbox.classList.remove('open'));
 lightbox.addEventListener('click', e=>{ if(e.target===lightbox) lightbox.classList.remove('open'); });
+
+/* ---------- Google Ads: click-to-call conversion ---------- */
+document.addEventListener('click', e=>{
+  if(!e.target.closest('a[href^="tel:"]')) return;
+  /* Fire and forget: no url is passed and the default is not prevented, so the
+     dialer opens even if gtag.js is blocked or slow. A tel: click does not
+     unload the page, so the hit still has time to send. */
+  if(typeof gtag_report_conversion === 'function') gtag_report_conversion();
+});
 
 /* ---------- Highlight today's hours ---------- */
 (function(){
