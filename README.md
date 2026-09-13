@@ -27,7 +27,7 @@ Point `blueshadows.ca` at the Vercel project in Project Settings → Domains.
 
 ## Booking
 All "Book Your Chair" CTAs link to the Square Appointments booking page:
-https://book.squareup.com/appointments/d34rhdcazwo38t/location/L2K4HDPJ9GD77?rwg_token=AE37R_iKErnsAB8XG7PTpK9k8xjnhwawuww3QbQ5krTOjKAV0fbDf9Kl9mISWfZbYHP9nUT0M-_PRZwWRt7HnWSD7Bwh0bckdA%3D%3D
+https://book.squareup.com/appointments/d34rhdcazwo38t/location/L2K4HDPJ9GD77
 
 ## Files
 - `index.html` — the full homepage (markup, styles, and script inline)
