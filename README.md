@@ -31,6 +31,8 @@ https://book.squareup.com/appointments/d34rhdcazwo38t/location/L2K4HDPJ9GD77
 
 ## Files
 - `index.html` — the full homepage (markup, styles, and script inline)
+- `blog/` — the blog: `blog/index.html` (listing with category filters) plus one static page per post, served at `/blog/<slug>` via clean URLs
+- `assets/blog.css`, `assets/blog.js` — shared styles and script for the blog pages (same design tokens, Google Ads tag and click-to-call tracking as the homepage)
 - `vercel.json` — security headers + clean URLs
-- `robots.txt`, `sitemap.xml` — basic SEO
+- `robots.txt`, `sitemap.xml` — basic SEO (the sitemap lists the homepage, `/blog`, and every post — add new posts here too)
 - `package.json` — optional local dev scripts (not required by Vercel)
